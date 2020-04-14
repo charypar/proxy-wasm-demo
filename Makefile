@@ -10,3 +10,7 @@ build-image: release
 
 deploy-envoy:
 	wasme deploy envoy hello_world:v0.1 --envoy-image=istio/proxyv2:1.5.1 --bootstrap=envoy-bootstrap.yml
+
+push-image: 
+	wasme tag hello_world:v0.1 webassemblyhub.io/charypar/rust_hello_world:v0.1
+	wasme push webassemblyhub.io/charypar/rust_hello_world:v0.1
