@@ -25,7 +25,7 @@ This is a demo accompanying a blogpost about building Envoy filters with Rust an
    $ make deploy-envoy
    ```
 
-Now you can open <http://localhost:8080/headers>. This is proying to <http://httpbin.org/headers>, reflecting request headers back at you. You should see
+Now you can open <http://localhost:8080/headers>. This is proxying to <http://httpbin.org/headers>, reflecting request headers back at you. You should see
 
 ```
 "X-Hello": "Hello world from localhost:8080"
